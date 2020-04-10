@@ -1,0 +1,21 @@
+.section-sr {
+  background-color: #272727; }
+
+.services__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .services__heading span {
+    width: 66px;
+    height: 57px;
+    background-color: #a4a4a4;
+    -webkit-clip-path: polygon(25% 0, 0 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0);
+    clip-path: polygon(25% 0, 0 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0); }
+  .services__heading:hover {
+    background-color: #ff0036; }

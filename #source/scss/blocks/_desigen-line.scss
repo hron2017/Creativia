@@ -1,0 +1,88 @@
+.row {
+	padding: 50px 0;
+	text-align: center;
+
+	@media (min-width: $md3+px) {
+		padding: 100px 0;
+	}
+}
+.col {
+	max-width: 259px;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 15px;
+
+	@media (min-width: $md3+px) {
+		margin-bottom: 30px;
+	}
+	.title {
+		font-size: 20px;
+		margin-bottom: 12px;
+		@media (min-width: $md3+px) {
+			margin-bottom: 28px;
+		}
+	}
+
+	&:hover {
+		.hexagon {
+			background-color: #ff0036;
+			&:after {
+				background-color: #ff0036;
+				@include anim(0.8s, 0s);
+			}
+			&:before {
+				color: #fff;
+				@include anim(0.7s, 0s);
+			}
+		}
+	}
+}
+.hexagon {
+	clip-path: polygon(25% 0, 0 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0);
+	width: 88px;
+	height: 76px;
+	display: inline-block;
+	position: relative;
+	background-color: #262626;
+	cursor: pointer;
+	margin-bottom: 15px;
+	@media (min-width: $md3+px) {
+		margin-bottom: 35px;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		top: 1px;
+		left: 1px;
+		clip-path: polygon(25% 0, 0 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0);
+		width: 86px;
+		height: 74px;
+		background-color: #fff;
+	}
+	&:before {
+		content: "\f3cd";
+		font-family: "FontAwesome";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #262626;
+		z-index: 1;
+		font-size: 32px;
+	}
+	&.heart {
+		&:before {
+			content: "\f004";
+		}
+	}
+	&.check {
+		&:before {
+			content: "\f560";
+		}
+	}
+	&.fire {
+		&:before {
+			content: "\f06d";
+		}
+	}
+}

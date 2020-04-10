@@ -1,0 +1,35 @@
+//<BUTTONS>====================================================================================================
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  background-color: #131313;
+  @include anim(0.3s, 0s);
+  &:first-child {
+    margin-right: 12px;
+  }
+
+  @media (min-width: 350px) {
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+  @media (min-width: $md4+px) {
+    padding: 18px 40px;
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: #ff0036;
+  }
+  &.fw {
+    width: 100%;
+  }
+}
+//</BUTTONS>====================================================================================================

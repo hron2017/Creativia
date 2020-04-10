@@ -1,0 +1,109 @@
+.plans {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	@media (min-width: $md4+px) {
+		justify-content: space-around;
+	}
+	@media (min-width: $md3+px) {
+		justify-content: space-between;
+	}
+}
+.plan {
+	border: 1px solid #e7e7e7;
+	flex: 0 0 95%;
+	cursor: pointer;
+	margin-bottom: 35px;
+	@media (min-width: $md4+px) {
+		flex: 0 0 44%;
+	}
+	@media (min-width: $md2+px) {
+		flex: 0 0 23%;
+		margin-bottom: 0;
+	}
+	&__order {
+		background-color: #262626;
+		color: #ffffff;
+		font-family: Raleway;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.65px;
+		text-transform: uppercase;
+		padding: 13px 45px;
+
+		@media (max-width: $md4+px) {
+			font-size: 14px;
+			padding: 7px 42px;
+		}
+	}
+	&__description {
+		li {
+			color: #262626;
+			font-family: Lato;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 52px;
+			border: 1px solid #e7e7e7;
+			padding: 0 7px;
+			&:last-child {
+				padding: 20px 0;
+			}
+
+			@media (max-width: $md4+px) {
+				font-size: 12px;
+				line-height: 34px;
+			}
+		}
+	}
+
+	&:hover {
+		.plan-heading__middle {
+			@include anim(0.7s, 0s);
+			background-color: #ff0036;
+			color: #fff;
+
+			sub {
+				@include anim(0.7s, 0s);
+				color: #fff;
+			}
+		}
+		.plan__order {
+			@include anim(0.7s, 0s);
+			background-color: #ff0036;
+		}
+	}
+}
+.plan-heading {
+	&__top {
+		padding: 12px 0;
+		color: #ffffff;
+		font-family: Raleway;
+		font-size: 16px;
+		font-weight: 500;
+		text-transform: uppercase;
+		background-color: #262626;
+
+		@media (max-width: $md4+px) {
+			font-size: 16px;
+			padding: 6px 0;
+		}
+	}
+	&__middle {
+		background-color: #f2f2f2;
+		padding: 20px 0;
+		color: #262626;
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 1;
+		sub {
+			color: #262626;
+			font-weight: 400;
+		}
+
+		@media (max-width: $md4+px) {
+			padding: 7px 0;
+			font-size: 32px;
+		}
+	}
+}

@@ -1,0 +1,91 @@
+.section-follow {
+	background-image: url(../img/Follow-bg.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.follow {
+	position: relative;
+	z-index: 3;
+
+	&-title {
+		color: #fff;
+		@media (max-width: $md3+px) {
+			margin-bottom: 70px;
+		}
+	}
+}
+.follow-social {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		max-width: 450px;
+		margin: 0 auto;
+
+		@media (max-width: $md4+px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+
+		@media (max-width: $md4+px) {
+			width: 50%;
+			align-items: center;
+			margin-bottom: 45px;
+		}
+
+		span {
+			color: #ffffff;
+		}
+	}
+	&__hexagon {
+		position: relative;
+		width: 75px;
+		height: 44px;
+		border: 2px solid #ff0036;
+		border-top: none;
+		border-bottom: none;
+		color: #ff0036 !important;
+		font-size: 24px;
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 33px;
+		transform: rotate(-30deg);
+		&:after,
+		&:before {
+			content: "";
+			position: absolute;
+			width: 75px;
+			height: 44px;
+			border: 2px solid #ff0036;
+			border-top: none;
+			border-bottom: none;
+		}
+		&:after {
+			transform: rotate(60deg);
+		}
+		&:before {
+			transform: rotate(-60deg);
+		}
+
+		&:hover {
+			background-color: #ff0036;
+			color: #fff !important;
+			&:after,
+			&:before {
+				background-color: #ff0036;
+				z-index: 0;
+			}
+		}
+		i {
+			z-index: 3;
+			transform: rotate(30deg);
+		}
+	}
+}
