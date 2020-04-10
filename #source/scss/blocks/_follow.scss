@@ -41,6 +41,18 @@
 		span {
 			color: #ffffff;
 		}
+
+		&:hover {
+			.follow-social__hexagon {
+				background-color: #ff0036;
+				color: #fff !important;
+				&:after,
+				&:before {
+					background-color: #ff0036;
+					z-index: 0;
+				}
+			}
+		}
 	}
 	&__hexagon {
 		position: relative;
@@ -57,8 +69,10 @@
 		justify-content: center;
 		margin-bottom: 33px;
 		transform: rotate(-30deg);
+		@include anim(0.3s, 0s);
 		&:after,
 		&:before {
+			@include anim(0.3s, 0s);
 			content: "";
 			position: absolute;
 			width: 75px;
@@ -74,15 +88,6 @@
 			transform: rotate(-60deg);
 		}
 
-		&:hover {
-			background-color: #ff0036;
-			color: #fff !important;
-			&:after,
-			&:before {
-				background-color: #ff0036;
-				z-index: 0;
-			}
-		}
 		i {
 			z-index: 3;
 			transform: rotate(30deg);

@@ -1861,6 +1861,12 @@ textarea.input {
       margin-bottom: 45px; } }
   .follow-social__item span {
     color: #ffffff; }
+  .follow-social__item:hover .follow-social__hexagon {
+    background-color: #ff0036;
+    color: #fff !important; }
+    .follow-social__item:hover .follow-social__hexagon:after, .follow-social__item:hover .follow-social__hexagon:before {
+      background-color: #ff0036;
+      z-index: 0; }
 
 .follow-social__hexagon {
   position: relative;
@@ -1887,8 +1893,18 @@ textarea.input {
   margin-bottom: 33px;
   -webkit-transform: rotate(-30deg);
   -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg); }
+  transform: rotate(-30deg);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
   .follow-social__hexagon:after, .follow-social__hexagon:before {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
     content: "";
     position: absolute;
     width: 75px;
@@ -1904,12 +1920,6 @@ textarea.input {
     -webkit-transform: rotate(-60deg);
     -ms-transform: rotate(-60deg);
     transform: rotate(-60deg); }
-  .follow-social__hexagon:hover {
-    background-color: #ff0036;
-    color: #fff !important; }
-    .follow-social__hexagon:hover:after, .follow-social__hexagon:hover:before {
-      background-color: #ff0036;
-      z-index: 0; }
   .follow-social__hexagon i {
     z-index: 3;
     -webkit-transform: rotate(30deg);
