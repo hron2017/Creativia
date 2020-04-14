@@ -196,7 +196,7 @@ body {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-image: url(../img/section-line.webp);
+  background-image: url(../img/section-line.png);
   background-repeat: no-repeat;
   margin: 0 auto;
   height: 19px;
@@ -213,7 +213,7 @@ body {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-image: url(../img/section-line-red.webp);
+  background-image: url(../img/section-line-red.png);
   background-repeat: no-repeat;
   margin: 0 auto;
   height: 19px;
@@ -765,7 +765,7 @@ textarea.input {
       justify-content: center;
       height: 100vh;
       position: relative;
-      background-image: url(../img/main-bg.webp);
+      background-image: url(../img/main-bg.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
@@ -915,6 +915,7 @@ textarea.input {
   .about-spollers__title {
     color: #262626;
     font-family: Raleway;
+    cursor: pointer;
     font-weight: 500;
     font-size: 18px;
     padding: 8px 0px 8px 70px;
@@ -931,7 +932,7 @@ textarea.input {
     .about-spollers__title.active {
       color: #ff0036; }
       .about-spollers__title.active:before {
-        background-image: url(../img/icons/spoller-icon-active.webp); }
+        background-image: url(../img/icons/spoller-icon-active.png); }
     .about-spollers__title:after {
       content: "";
       position: absolute;
@@ -1206,7 +1207,7 @@ textarea.input {
   transform: translate(-50%); }
 
 .section-clients {
-  background-image: url(../img/clints-bg.webp);
+  background-image: url(../img/clints-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -1357,13 +1358,13 @@ textarea.input {
         height: 41px;
         background-repeat: no-repeat; }
     .clients-service__item:first-child span:before {
-      background-image: url(../img/client/clients-icon.webp); }
+      background-image: url(../img/client/clients-icon.png); }
     .clients-service__item:nth-child(2) span:before {
-      background-image: url(../img/client/clients-icon-01.webp); }
+      background-image: url(../img/client/clients-icon-01.png); }
     .clients-service__item:nth-child(3) span:before {
-      background-image: url(../img/client/clients-icon-03.webp); }
+      background-image: url(../img/client/clients-icon-03.png); }
     .clients-service__item:last-child span:before {
-      background-image: url(../img/client/clients-icon-04.webp); }
+      background-image: url(../img/client/clients-icon-04.png); }
 
 .team-list {
   display: -webkit-box;
@@ -1695,7 +1696,7 @@ textarea.input {
 
 .section-tw {
   background-color: #272727;
-  background-image: url(../img/twitter-img.webp);
+  background-image: url(../img/twitter-img.png);
   background-position: left bottom;
   background-repeat: no-repeat; }
 
@@ -1815,7 +1816,7 @@ textarea.input {
         color: #a2a2a2; }
 
 .section-follow {
-  background-image: url(../img/Follow-bg.webp);
+  background-image: url(../img/Follow-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }

@@ -1,5 +1,5 @@
 .section-clients {
-	background-image: url(../img/clints-bg.webp);
+	background-image: url(../img/clints-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -152,28 +152,28 @@
 		&:first-child {
 			span {
 				&:before {
-					background-image: url(../img/client/clients-icon.webp);
+					background-image: url(../img/client/clients-icon.png);
 				}
 			}
 		}
 		&:nth-child(2) {
 			span {
 				&:before {
-					background-image: url(../img/client/clients-icon-01.webp);
+					background-image: url(../img/client/clients-icon-01.png);
 				}
 			}
 		}
 		&:nth-child(3) {
 			span {
 				&:before {
-					background-image: url(../img/client/clients-icon-03.webp);
+					background-image: url(../img/client/clients-icon-03.png);
 				}
 			}
 		}
 		&:last-child {
 			span {
 				&:before {
-					background-image: url(../img/client/clients-icon-04.webp);
+					background-image: url(../img/client/clients-icon-04.png);
 				}
 			}
 		}
